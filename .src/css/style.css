@@ -1,0 +1,153 @@
+@font-face {
+    font-family: Delius;
+    src: url("/.src/fonts/Delius.ttf");
+}
+
+@font-face {
+    font-family: Pacifico;
+    src: url("/.src/fonts/Pacifico.ttf");
+}
+
+:root {
+    --void: #0e0b16;
+    --fuschia: #a239ca;
+    --jewel: #4717f6;
+    --stark: #e7dfdd;
+    --white: #ffffff;
+    --black: #000000;
+
+    --marginTop: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Pacifico, Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, li, p, a, label, input, textarea, small {
+    line-height: 1;
+}
+
+h1 {
+    font-size: 75px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 22px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+label {
+    font-size: 20px;
+}
+
+li, p, a, input, small, textarea {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: var(--stark);
+}
+
+/* Header */
+header {
+    background-color: var(--void);
+}
+
+header .header {
+    display: flex;
+
+    width: 90%;
+
+    margin: auto;
+
+    padding: 15px 0px;
+
+    vertical-align: baseline;
+
+    align-items: center;
+}
+
+header .header .header-menu {
+    vertical-align: baseline;
+}
+
+header .header .header-menu ul {
+    display: block;
+
+    clear: both;
+    overflow: hidden;
+}
+
+header .header .header-menu ul li {
+    float: left;
+}
+
+header .header .header-menu ul li a {
+    display: block;
+
+    color: var(--white);
+}
+
+header .header .menu-esquerdo ul li a {
+    font-family: Pacifico, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+header .header .menu-direito {
+    margin-left: auto;
+}
+
+header .header .menu-direito ul li {
+    margin-right: 15px;
+}
+
+header .header .menu-direito ul li:last-of-type {
+    margin-right: 0px;
+}
+
+header .header .menu-direito ul li a {
+    line-height: 1.5;
+    
+    border-top: 2px solid transparent;
+
+    border-bottom: 2px solid transparent;
+
+    transition: 200ms all ease-in-out;
+}
+
+header .header .menu-direito ul li a:hover {
+    color: var(--fuschia);
+
+    border-bottom-color: var(--fuschia);
+}
