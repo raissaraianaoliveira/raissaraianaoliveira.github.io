@@ -1,6 +1,4 @@
-main {
-    background-color: var(--stark);
-}
+main {}
 
 /* Banner */
 main .banner {
@@ -58,9 +56,9 @@ main .sobre .box {
 main .sobre .box .item {
     flex: 1;
 
-    min-width: 50%;
+    min-width: 350px;
 
-    padding: 5px;
+    padding: var(--paddingItens);
 }
 
 main .sobre .box .item img {
@@ -88,11 +86,101 @@ main .sobre .box .item h2 {
 }
 
 main .sobre .box .item p:first-of-type {
-    margin-top: var(--marginTop);
+    margin-top: var(--marginItens);
 }
 
 main .sobre .box .item p {
-    margin-top: 5px;
+    margin-top: var(--marginItens);
 
     text-align: justify;
+}
+
+/* Serviços */
+main .servicos {
+    display: block;
+
+    width: 90%;
+
+    margin: auto;
+    margin-top: var(--marginTop);
+}
+
+main .servicos h2 {
+    display: block;
+
+    width: fit-content;
+
+    margin: auto;
+}
+
+main .servicos .box {
+    margin-top: var(--marginTop);
+
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+main .servicos .box .item {
+    flex: 1;
+
+    margin: var(--marginItens) auto;
+    padding: var(--paddingItens);
+
+    min-width: 250px;
+    max-width: min-content;
+
+    border: 2px solid black;
+}
+
+main .servicos .box .item p {
+    margin-top: var(--marginItens);
+}
+
+/* Contato */
+main .contato {
+    display: block;
+    
+    width: 90%;
+
+    margin: auto;
+    margin-top: var(--marginTop);
+}
+
+main .contato h2 {
+    display: block;
+
+    width: fit-content;
+
+    margin: auto;
+}
+
+main .contato .box {
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+main .contato .box .item {
+    flex: 1;
+
+    margin: var(--marginItens);
+    padding: var(--paddingItens);
+
+    width: 33.3%;
+    min-width: 250px;
+}
+
+main .contato .box .item h3 {}
+
+main .contato .box .item p {
+    margin-top: var(--marginItens);
+}
+
+main .contato .box .item p a {
+    transition: 200ms ease-in-out all;
+}
+
+main .contato .box .item p a:hover {
+    color: var(--cor3);
 }
