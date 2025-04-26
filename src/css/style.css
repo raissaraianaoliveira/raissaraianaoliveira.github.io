@@ -19,6 +19,7 @@
 
     --marginTop: 15px;
     --marginItens: 5px;
+    --paddingFooter: 15px;
     --paddingItens: 10px;
 }
 
@@ -158,6 +159,7 @@ header .header .menu-direito ul li a:hover {
 
 /* Footer */
 footer {
+    margin-top: var(--marginTop);
     background-color: var(--cor1);
 }
 
@@ -168,7 +170,7 @@ footer .footer {
 
     margin: auto;
 
-    padding: var(--paddingItens);
+    padding: var(--paddingFooter);
 }
 
 footer .footer div {}

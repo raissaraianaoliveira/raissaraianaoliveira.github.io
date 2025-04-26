@@ -128,9 +128,9 @@ main .servicos .box .item {
     padding: var(--paddingItens);
 
     min-width: 250px;
-    max-width: min-content;
+    max-width: min-content;;
 
-    border: 2px solid black;
+    text-align: center;
 }
 
 main .servicos .box .item p {
@@ -169,6 +169,8 @@ main .contato .box .item {
 
     width: 33.3%;
     min-width: 250px;
+
+    text-align: center;
 }
 
 main .contato .box .item h3 {}
@@ -183,4 +185,22 @@ main .contato .box .item p a {
 
 main .contato .box .item p a:hover {
     color: var(--cor3);
+}
+
+/* Whatsapp */
+.whatsapp {
+    position: fixed;
+
+    right: 5%;
+    bottom: 5%;
+}
+
+.whatsapp a {
+    display: block;
+}
+
+.whatsapp a img {
+    display: block;
+
+    width: 75px;
 }
